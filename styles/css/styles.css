@@ -5,14 +5,40 @@
   src: url("../../src/font/Norsebold.otf");
 }
 
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .container-fluid {
   max-width: 100%;
+}
+
+.btn {
+  background-color: #6abfc3;
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  padding: 1rem 3.5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* header */
 .main-header {
   font-size: 1rem;
-  padding: 20px 9vw;
+  padding: 10px 168px;
   margin-bottom: 50px;
   background-color: lightblue;
   display: flex;
@@ -45,7 +71,7 @@
   text-transform: uppercase;
   letter-spacing: 0.4px;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2rem;
   display: inline-block;
   padding-left: 0.5em;
   white-space: nowrap;
@@ -53,7 +79,7 @@
 
 @media (max-width: 991px) {
   .main-header .logo-text {
-    font-size: 30px;
+    font-size: 1.5rem;
   }
 }
 
@@ -67,7 +93,7 @@
   padding: .5rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1rem;
   white-space: nowrap;
 }
 
@@ -107,4 +133,65 @@
   .main-header .burger-menu {
     display: block;
   }
+}
+
+/* main content */
+.main {
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+.main .content-header {
+  background-color: lightpink;
+}
+
+.main .content-header header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 3.75rem;
+  text-align: center;
+}
+
+.main .content-header header h1 {
+  font-size: 2.25rem;
+  font-weight: 100;
+  color: #ce973e;
+  padding-bottom: 1.875rem;
+  line-height: 1.2;
+}
+
+.main .content-header header div {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 4.375rem;
+}
+
+.main .content-header header div p {
+  color: rgba(74, 74, 74, 0.7);
+  font-size: 1.125rem;
+  letter-spacing: 0.2px;
+  margin-bottom: 1rem;
+  line-height: 1.88;
+}
+
+.main .content-header header div a {
+  color: #ce973e;
+  text-decoration: underline;
+}
+
+.main .content-header header div a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+/* How it works */
+.how-it-works {
+  min-height: 400px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  background-color: lightsalmon;
 }
