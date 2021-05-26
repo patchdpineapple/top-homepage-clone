@@ -7,14 +7,15 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
          rel="stylesheet">
         <link rel="stylesheet" href="./styles/css/styles.css" />
+        <script src="https://kit.fontawesome.com/328bf15d0d.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="main-header container-fluid">
             <div class="container all-11">
-                <div class="logo-wrapper">
+                <a class="logo-wrapper">
                     <img alt="Odin logo" src="src/assets/odin-logo.svg" height="70">
                     <div class="logo-text">THE ODIN PROJECT</div>
-                </div>
+                </a>
                 <nav>
                     <ul>
                         <li><a>All paths</a></li>
@@ -26,9 +27,9 @@
                         <li><a>Login</a></li>
                     </ul>
                 </nav>
-                <div class="burger-menu">
+                <a class="burger-menu">
                     <span class="material-icons">menu</span>
-                </div>
+                </a>
             </div>
         </header>
         <div class="main container-fluid">
@@ -44,7 +45,7 @@
                 <img class="hero__image" alt="home-page-banner" src="src/assets/home-isometric.svg">
             </section>
             <section class="how-it-works ">
-                <div class="info container all-11 sm-10 md-8 lg-5 all--display-flex all--text-center">
+                <div class="info container all-11 sm-10 md-8 lg-6 all--display-flex all--text-center">
                     <h2>How it works</h2>
                     <p>This is the website we wish we had when we were learning on our own. We scour the internet looking for only the best resources to supplement your learning and present them in a logical order.</p>
                 </div>
@@ -159,5 +160,39 @@
                 </div>
             </section>
         </div>
+        <footer class="main-footer container-fluid all--display-flex">
+            <div class="footer-brand">
+                <a class="logo-wrapper">
+                    <img alt="Odin logo" src="src/assets/odin-logo.svg" height="70">
+                    <div class="logo-text">THE ODIN PROJECT</div>
+                </a>
+            </div>
+            <div class="footer-social">
+                <a>
+                    <i class="fab fa-github"></i>
+                </a>
+                <a>
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a>
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a>
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="footer-links">
+                <div class="footer-links-container footer-links-1">
+                    <a>About</a>
+                    <a>FAQ</a>
+                    <a>Blog</a>
+                </div>
+                <div class="footer-links-container footer-links-2">
+                    <a>Success Stories</a>
+                    <a>Contribute</a>
+                    <a>Terms of Use</a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
