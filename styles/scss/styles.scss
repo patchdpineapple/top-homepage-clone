@@ -7,6 +7,7 @@
 
 // variables
 $color-odin: #ce973e;
+$color-gray: #7f7f7f;
 $button-primary: #6abfc3;
 
 //global
@@ -41,6 +42,12 @@ body {
     }
 }
 
+.py-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/***** STYLES *****/
 /* header */
 .main-header {
     font-size: 1rem;
@@ -57,6 +64,12 @@ body {
 
     @media(max-width: 767px) {
         padding: 5px 20px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .logo-wrapper {
@@ -91,7 +104,7 @@ body {
         }
 
         a {
-            color: #7f7f7f;
+            color: $color-gray;
             padding: .5rem;
             font-family: 'Open Sans', sans-serif;
             font-weight: 700;
@@ -109,7 +122,7 @@ body {
 
         .divider {
             &::after {
-                font-size: 2rem;
+                font-size: 1.5rem;
                 content: "|";
                 color: #7f7f7f;
                 padding: .5rem;
@@ -177,7 +190,8 @@ body {
                 a {
                     color: $color-odin;
                     text-decoration: underline;
-    
+                    line-height: 24px;
+
                     &:hover {
                         text-decoration: none;
                         color: #000;
@@ -195,8 +209,65 @@ body {
     margin-top: 100px;
     margin-bottom: 70px;
     background-color: lightsalmon;
+
+    .info {
+        flex-flow: column;
+        align-items: center;
+        margin-bottom: 100px;
+
+        h2 {
+            color: #4a4a4a;
+            letter-spacing: 0.3px;
+            margin-bottom: 54px;
+        }
+
+        p {
+            color: #4a4a4ab3;
+            font-size: 1.125rem;
+            letter-spacing: 0.2px;
+            line-height: 1.88;
+        }
+    }
+
+    .lbc-wrapper {
+        justify-content: center;
+
+        @media (max-width: 767px) {
+            flex-flow: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .lbc {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            padding: 1rem;
+            
+            img {
+                height: 165px;
+                @media (max-width: 767px) {
+                    height: 120px;
+                }
+            }
+
+            h4 {
+                color: #4a4a4a;
+                letter-spacing: 0.3px;
+                margin-top: 50px;
+                margin-bottom: 20px;
+            }
+    
+            p {
+                color: #4a4a4ab3;
+                font-size: 1.125rem;
+                letter-spacing: 0.2px;
+                line-height: 1.88;
+            }
+        }
+
+        
+    }
 }
 
 
-
-//styles
